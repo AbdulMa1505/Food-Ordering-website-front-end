@@ -1,0 +1,2 @@
+# Food Ordering website
+- This project is a simple and responsive food ordering form built with HTML and Bootstrap. It allows users to select a food item, specify the quantity, and enter delivery details to place an order. This project demonstrates a structured form layout with Bootstrap styling, making it both user-friendly and visually appealing.

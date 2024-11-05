@@ -1,0 +1,95 @@
+body,.top-recipes{
+    background-color: #2A2438 !important;
+}
+h2{
+    color: #dbd8e3 !important;
+}
+.navbar {
+    background-color: #f48fb1;
+}
+
+.food-search {
+    background-image: url(/Images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.form-control {
+    border-radius: 20px;
+   outline: none !important;
+   border: none !important;
+   padding: 1%;
+   font-size: 1rem;
+}
+.btn-primary{
+    background-color: #f48fb1 !important;
+    padding: 10px 20px !important;
+    transition: background-color 0.3s ease;
+}
+.btn-primary:hover{
+    background-color: #970939 !important;
+}
+.top-recipes .card {
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+.card:hover{
+transform: translateY(-5px) scale(1.05);
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.carousel-item .carousel-img{
+    max-height: 500px;
+    object-fit: cover;
+}
+.carousel-img{
+    border-radius: 10px;
+}
+.carousel-caption{
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1em;
+    border-radius: 8px;
+}
+.footer-info{
+    text-decoration: none;
+    color: inherit;
+    font-style: inherit;
+}
+/* responsive */
+@media (max-width: 768px) {
+    .food-search {
+      padding: 15px; 
+    }
+
+    .form-control {
+      width: 70%; 
+    }
+  }
+  
+  /* about us  */
+  .about-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+.about-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+/* order styling */
+.order-section {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+.order-form {
+    max-width: 700px;
+    margin: 0 auto;
+}
+.food-menu-img img {
+    width: 100%;
+    border-radius: 8px;
+}
+.food-menu-desc {
+    margin-left: 15px;
+}
+.form-control {
+    border-radius: 5px;
+}
