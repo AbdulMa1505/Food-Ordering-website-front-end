@@ -1,0 +1,166 @@
+/* Author Abdul Malik
+Theme Restaurant */
+ *{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+ }
+ a{
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+ }
+ .wrapper{
+    /* border: 2px solid black; */
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+ }
+ .text-center{
+    text-align: center;
+ }
+ .clear-fix{
+    float: none;
+    clear: both;
+
+ } .btn-primary{
+   float: right;
+   border: 0;
+   outline: 0;
+   padding: 1%;
+   border-radius: 5px;
+   font-size: 1rem;
+   background-color: #4687c4f6;
+   margin-bottom: 2%;
+ }
+ .btn-primary:hover{
+   background-color: #5978a0;
+ }
+ .btn-info{
+   border: 0;
+   outline: 0;
+   padding: 1%;
+   border-radius: 5px;
+   font-size: 1rem;
+   background-color: #718093;
+ }
+ .btn-danger{
+   border: 0;
+   outline: 0;
+   padding: 1%;
+   border-radius: 5px;
+   font-size: 1rem;
+   background-color: #e84118;
+ }
+ .btn-success{
+   border: 0;
+   outline: 0;
+   padding: 1%;
+   border-radius: 5px;
+   font-size: 1rem;
+   background-color: #44bd32;
+ }
+ .btn-success:hover{
+   background-color:#0e4e04 ;
+ }
+ .btn-danger:hover{
+   background-color: #c4310c;
+ }
+ .btn-info:hover{
+   background-color: #5978a0;
+ }
+ /* menu styling */
+ .menu{
+    text-align: center;
+    border-bottom: 1px solid #222f3e;
+ }
+ .menu ul{
+    list-style-type: none;
+ }
+ .menu ul li{
+    display: inline;
+    padding: 1%;
+ }
+ .menu ul li a:hover{
+    color: #576574;
+ }
+ /* main content styling */
+ .main-menu{
+    /* margin: 1% 0; */
+    background-color:#c8d6e5 ;
+    width: 100%;
+ }
+ .footer{
+    background-color: #222f3e;
+    color: white;
+ }
+ .col-4{
+    width: 18%;
+    background-color:#8395a7;
+    padding: 2%;
+    margin: 1%;
+    float: left;
+ }
+ /* table styling */
+ .tb-1{
+   width: 100%;
+   border: 1px solid #222f3e;
+   border-collapse: collapse;
+
+ }
+ table tr th{
+   border: 1px solid #222f3e;
+   padding: 1%;
+   text-align: left;
+ }
+ table tr td{
+   border: 1px solid #222f3e;
+   padding: 1%;
+ }
+ .form-container-1 {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   background-color: #f4f6f9;
+}
+.form-container-2 {
+   background-color: #fff;
+   padding: 20px;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   width: 100%;
+   max-width: 500px;
+} 
+ .form-group {
+   margin-bottom: 15px;
+}
+.form-label {
+   display: block;
+   margin-bottom: 5px;
+   font-weight: bold;
+   color: #555;
+}
+.form-input {
+   width: 90%;
+   height: 100%;
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   font-size: 1rem;
+}
+.form-button {
+   width: 100%;
+   padding: 10px;
+   background-color: #4CAF50;
+   border: none;
+   border-radius: 4px;
+   color: #fff;
+   font-size: 1rem;
+   font-weight: bold;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+.form-button:hover {
+   background-color: #45a049;
+}
