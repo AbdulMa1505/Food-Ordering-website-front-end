@@ -1,7 +1,14 @@
 <?php
 require 'includes/header.php';
 require 'includes/connect.php';
-?>
+
+$stmt=$conn->prepare("SELECT * FROM tbl_admin");
+$stmt->execute();
+$query=$stmt->fetchAll(PDO::FETCH_ASSOC);
+
+
+ ?>
+
 
 
     <!-- body -->
@@ -17,59 +24,19 @@ require 'includes/connect.php';
             <th> USERNAME</th>
             <th> ACTION</th>
 
-         <?php $stmt=$conn("SELECT * FROM tbl_admin")?>
          
+            <?php foreach($query as $result):?>
             <tr>
-               <td>1</td>
-               <td>Abdul Malik</td>
-               <td>abdul1505</td>
+               <td><?php echo $result['id'];?></td>
+               <td><?php echo $result['fname'];?></td>
+               <td><?php echo $result['username'];?></td>
                <td>
-                  <a href="edit.php" class="btn-primary btn-success">EDIT</a>
-                  <a href="delete.php" class="btn-primary btn-danger">DELETE</a>
-                  <a href="view.php" class="btn-primary btn-info">VIEW</a>
+                  <a name="update" href="update-admin.php?id=<?php echo $result['id'];?>" class="btn-primary btn-success ">EDIT</a>
+                  <a name="delete" href="delete.php?id=<?php echo $result['id'];?>" class="btn-primary btn-danger">DELETE</a>
+                  <a name="view " href="view.php?id=<?php echo $result['id'];?>" class="btn-primary btn-info">VIEW</a>
                </td>
             </tr>
-            <tr>
-               <td>1</td>
-               <td>Abdul Malik</td>
-               <td>abdul1505</td>
-               <td>
-               <button class="btn-primary btn-success">EDIT</button>
-                  <button class="btn-primary btn-danger">DELETE</button>
-                  <button class="btn-primary btn-info">VIEW</button>
-               </td>
-            </tr>
-            <tr>
-               <td>1</td>
-               <td>Abdul Malik</td>
-               <td>abdul1505</td>
-               <td>
-               <button class="btn-primary btn-success">EDIT</button>
-                  <button class="btn-primary btn-danger">DELETE</button>
-                  <button class="btn-primary btn-info">VIEW</button>
-               </td>
-            </tr>
-            <tr>
-               <td>1</td>
-               <td>Abdul Malik</td>
-               <td>abdul1505</td>
-               <td>
-               <button class="btn-primary btn-success">EDIT</button>
-                  <button class="btn-primary btn-danger">DELETE</button>
-                  <button class="btn-primary btn-info">VIEW</button>
-               </td>
-            </tr>
-            <tr>
-               <td>1</td>
-               <td>Abdul Malik</td>
-               <td>abdul1505</td>
-               <td>
-                  <button class="btn-primary btn-success">EDIT</button>
-                  <button class="btn-primary btn-danger">DELETE</button>
-                  <button class="btn-primary btn-info">VIEW</button>
-               </td>
-            </tr>
-         
+            <?php endforeach;?>
         </table>
         </div>
      </div>

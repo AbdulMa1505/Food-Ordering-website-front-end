@@ -8,7 +8,7 @@ if (isset($_POST['submit'])) {
     }
     $name = $_POST['fullName'];
     $email = $_POST['email'];
-    $password = $_POST['password'];
+    $password = password_hash($_POST['password'],PASSWORD_BCRYPT);
     $stmt = $conn->prepare("INSERT INTO tbl_admin (fname, username, password) VALUES (:name, :email, :password)");
     // Bind the parameters to prevent SQL injection
     $stmt->bindParam(':name', $name);

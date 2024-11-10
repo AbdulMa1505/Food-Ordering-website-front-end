@@ -39,7 +39,7 @@ Theme Restaurant */
  .btn-info{
    border: 0;
    outline: 0;
-   padding: 1%;
+   padding: 2%;
    border-radius: 5px;
    font-size: 1rem;
    background-color: #718093;
@@ -47,7 +47,7 @@ Theme Restaurant */
  .btn-danger{
    border: 0;
    outline: 0;
-   padding: 1%;
+   padding: 2%;
    border-radius: 5px;
    font-size: 1rem;
    background-color: #e84118;
